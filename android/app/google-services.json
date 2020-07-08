@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "311355816707",
+    "firebase_url": "https://photo-pose-expert.firebaseio.com",
+    "project_id": "photo-pose-expert",
+    "storage_bucket": "photo-pose-expert.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311355816707:android:81725670d7e40f2c8a0736",
+        "android_client_info": {
+          "package_name": "com.example.pose_expert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311355816707-5o7pi1eme8taggqoicd1rjbb2o6afm2b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pose_expert",
+            "certificate_hash": "a2963ab2a4c4e6d0c70c41b47ea8c32022082f2e"
+          }
+        },
+        {
+          "client_id": "311355816707-l6vfjnu0qbekv52g3uuq68lcqbfebdhl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pose_expert",
+            "certificate_hash": "a4c502001318216ff076094e0cbc9e591bbfb735"
+          }
+        },
+        {
+          "client_id": "311355816707-l2bi9l93ll66fcoourush2820hb9u7n8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXy3m9jc8SO5RvwhVUijv1BCVKbiVk1Io"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311355816707-l2bi9l93ll66fcoourush2820hb9u7n8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311355816707:android:6f8c37aa0ceedc7c8a0736",
+        "android_client_info": {
+          "package_name": "com.example.pose_expert_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311355816707-v7ablvc4ruftguvhsf9443p38tlcqn09.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pose_expert_admin",
+            "certificate_hash": "a4c502001318216ff076094e0cbc9e591bbfb735"
+          }
+        },
+        {
+          "client_id": "311355816707-28v9flridm09bautmdun93chmb6ac818.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pose_expert_admin",
+            "certificate_hash": "a2963ab2a4c4e6d0c70c41b47ea8c32022082f2e"
+          }
+        },
+        {
+          "client_id": "311355816707-l2bi9l93ll66fcoourush2820hb9u7n8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXy3m9jc8SO5RvwhVUijv1BCVKbiVk1Io"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311355816707-l2bi9l93ll66fcoourush2820hb9u7n8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

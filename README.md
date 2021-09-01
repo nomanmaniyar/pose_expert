@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+In RELEASE Folder all Apps are there to RUN
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

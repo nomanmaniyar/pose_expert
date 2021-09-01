@@ -10,25 +10,26 @@ class _AboutState extends State<About> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
         elevation: 0,
       ),
       body: Container(
         child: Column(
           children: <Widget>[
-            Container(
-              child: Image.asset("assets/logo.png"),
-            ),
-            // Text(
-            //   "NR Tech Solution",
-            //   textAlign: TextAlign.center,
-            //   style: TextStyle(fontSize: 25),
-            // ),
-            // Divider(
-            //   color: Colors.white,
+            // Container(
+            //   child: Image.asset("assets/logo.png"),
             // ),
             Text(
-              "Contact us: ",
+              // "NR Tech Solution",
+              "Developed by\n\nNoman Maniyar",
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 25),
+            ),
+            Divider(
+              color: Colors.white,
+            ),
+            Text(
+              "Contact: ",
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 20),
             ),
@@ -50,7 +51,8 @@ class _AboutState extends State<About> {
                 //padding: const EdgeInsets.fromLTRB(10, 8, 8.0, 0),
                 Flexible(
                   child: Text(
-                    "7028502648",
+                    // "7028502648",
+                    "8830611469",
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 17),
                   ),
@@ -69,7 +71,8 @@ class _AboutState extends State<About> {
                 ),
                 Flexible(
                   child: Text(
-                    "nrtechsolution8@gmail.com",
+                    // "nrtechsolution8@gmail.com",
+                    "nomaanmaniyar123@gmail.com",
                     softWrap: true,
                     textAlign: TextAlign.left,
                     style: TextStyle(fontSize: 17),

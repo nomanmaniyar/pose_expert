@@ -1,9 +1,11 @@
+import 'dart:convert';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_offline/flutter_offline.dart';
 import 'package:connectivity/connectivity.dart';
+import 'package:http/http.dart' as http;
 
 class OnlinePosts extends StatefulWidget {
   @override
@@ -17,11 +19,13 @@ class _OnlinePostsState extends State<OnlinePosts> {
   bool boy = true;
   bool girl = false;
 
+  dynamic data = null;
+
   @override
   void initState() {
     getMensPosts();
     getWomensPosts();
-
+    getData();
     super.initState();
   }
 
@@ -39,7 +43,7 @@ class _OnlinePostsState extends State<OnlinePosts> {
             child: Center(
               child: Text(
                 "Oops, \n\nNow we are Offline!\nPlease connect to Internet",
-                style: TextStyle(color: Colors.black,fontFamily:"muli"),
+                style: TextStyle(color: Colors.black, fontFamily: "muli"),
               ),
             ),
           );
@@ -125,14 +129,46 @@ class _OnlinePostsState extends State<OnlinePosts> {
     );
   }
 
-/*
+  Future getData() async {
+    // ignore: avoid_init_to_null
+    try {
+      await http.get("https://api.pexels.com/v1/search?query=people", headers: {
+        "Content-Type": "application/json;charset=utf-8",
+        "Authorization":
+            "563492ad6f917000010000017ac638fc3ddd4bc295c96e258e29ef67"
+      }).then((value) {
+        data = json.decode(value.body.toString());
+      });
+      print(data.toString());
+    } catch (err) {
+      print(err);
+    }
+  }
 
-
- 
-*/
+  Widget pexelPhoto() {
+    return ListView.builder(
+        itemCount: data["per_page"],
+        itemBuilder: (BuildContext contex, int index) {
+          print("LEngth: ${data["per_page"]}");
+          return Card(
+            margin: const EdgeInsets.fromLTRB(8, 5, 8, 3),
+            clipBehavior: Clip.hardEdge,
+            elevation: 15,
+            child: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: NetworkImage(
+                      data['photos'][index]['src']['small'].toString(),
+                    ),
+                    fit: BoxFit.fill),
+              ),
+            ),
+          );
+        });
+  }
 
   Widget mensList() {
-    return mensPosts.length == 0
+    return mensPosts.length <= 0
         ? Center(
             child: Text(
             "Sorry No Boys Posts",

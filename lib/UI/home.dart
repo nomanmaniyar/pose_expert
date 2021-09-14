@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pose_expert/UI/search.dart';
 
 class Home extends StatefulWidget {
   @override

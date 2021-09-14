@@ -2,6 +2,7 @@
 /.flutter-plugins
 /.flutter-plugins-dependencies
 /.git
+/.lock
 /.packages
 /build
 /flutter_01.log

@@ -69,7 +69,6 @@ class _PageViewControllerState extends State<PageViewController> {
           FFNavigationBarItem(
             iconData: Icons.search,
             label: 'Search',
-            
             selectedBackgroundColor: Colors.purple,
           ),
           FFNavigationBarItem(

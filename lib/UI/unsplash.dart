@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:pose_expert/UI/search.dart';
-import 'dart:wasm';
+// import 'dart:wasm';
 import 'package:pose_expert/util.dart' as util;
 import 'package:flutter/services.dart';
 import 'dart:convert';
@@ -74,7 +74,7 @@ class _UnsplashState extends State<Unsplash> {
   }
 
   @override
-  Void dispose() {
+  void dispose() {
     scrollController.dispose();
     super.dispose();
   }
